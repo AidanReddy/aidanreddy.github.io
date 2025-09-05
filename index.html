@@ -16,20 +16,21 @@
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: clamp(2rem, 2.5vw + 1rem, 3rem);
       margin-bottom: 0.4em;
     }
 
     p.description {
-      width: 640px;
+      max-width: 65ch;
+      width: calc(100% - 32px);
       margin: 0 auto 1.2em auto;
-      font-size: 1.05em;
+      font-size: clamp(1rem, 0.3vw + 0.95rem, 1.125rem);
       text-align: left;
     }
 
     p.links {
       margin-top: 1.2em;
-      font-size: 1.1em;
+      font-size: clamp(1rem, 0.25vw + 0.95rem, 1.1rem);
     }
 
     a {
@@ -44,7 +45,7 @@
     img.profile-photo {
       display: block;
       margin: 12px auto 20px auto;
-      width: 180px;
+      width: clamp(140px, 18vw, 220px);
       height: auto;
       border-radius: 0;
       filter: grayscale(100%);
